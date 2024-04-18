@@ -111,7 +111,7 @@ build_prerequisites_maxim() {
 	fi
 
 	if [ ! -d ~/.mcuflash/maxim/openocd ]; then
-		git clone https://github.com/MaximIntegratedMicros/openocd.git ~/.mcuflash/maxim/openocd &&
+		git clone https://github.com/analogdevicesinc/openocd.git ~/.mcuflash/maxim/openocd &&
 		pushd ~/.mcuflash/maxim/openocd &&
 		./bootstrap &&
 		./configure --enable-cmsis-dap &&
